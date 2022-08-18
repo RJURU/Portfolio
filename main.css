@@ -247,19 +247,23 @@ button {
   border-radius: 0 0 25px 25px;
   height: 150px;
   border-top: 3px solid #ce2b2d;
+  display: flex;
+  flex-direction: column;
 }
 .content .project-name {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin-top: 0;
   margin-bottom: 5px;
 }
 .content .short-desc {
   font-size: 0.9rem;
+  margin-bottom: auto;
 }
 .content .language-container {
   position: relative;
   display: flex;
   justify-content: center;
+  margin-bottom: 10px;
 }
 .content .language {
   display: flex;
@@ -301,6 +305,42 @@ button {
   font-size: 1.3rem;
 }
 .show-desc a:hover {
+  text-decoration: underline;
+}
+
+#code-examples {
+  background: #4a4a4a;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#scion-scheme {
+  background: #4a4a4a;
+  border-radius: 25px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.scion-container {
+  padding: 10px;
+  padding-top: 20px;
+  display: flex;
+}
+.scion-container h2 {
+  font-size: 2rem;
+}
+.scion-container p {
+  font-size: 1rem;
+}
+.scion-container h3 {
+  margin-bottom: 5px;
+  font-size: 1.2rem;
+}
+.scion-container a {
+  font-size: 1rem;
+}
+.scion-container a:hover {
   text-decoration: underline;
 }
 
@@ -382,7 +422,7 @@ textarea#message {
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav li {
     margin-left: 25px;
   }
@@ -392,6 +432,8 @@ textarea#message {
   .nav i {
     display: block;
   }
+}
+@media (max-width: 768px) {
   #contact {
     flex-direction: column;
   }
@@ -400,5 +442,16 @@ textarea#message {
   }
   .name {
     flex-direction: column;
+  }
+  .scion-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav {
+    padding: 5px;
+  }
+  .nav li {
+    font-size: 1.5rem;
+    margin-left: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
