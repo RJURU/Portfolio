@@ -194,13 +194,6 @@ button {
     }
 }
 
-#contact {
-    height: 10vh;
-    background: $secondary;
-    border-radius: 25px 25px 0 0;
-    bottom: 0;
-}
-
 #about-show {
     display: none;
     flex-direction: row;
@@ -211,6 +204,7 @@ button {
     @include borderSides;
     .about-container {
         max-width: 31%;
+        min-width: 200px;
     }
     h3 {
         padding: 0 5px;
@@ -315,6 +309,20 @@ button {
             text-decoration: underline;
         }
     }
+}
+
+
+#contact {
+    height: auto;
+    background: $secondary;
+    border-radius: 25px 25px 0 0;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+}
+
+.contact-col {
+    width: 50%;
 }
 
 
