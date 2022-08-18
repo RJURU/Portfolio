@@ -210,25 +210,44 @@
                         <div class="contact-info">
                             <h2>Contact</h2>
                             <p>If you would like to get in touch, ask questions about the projects, or would like to know more about me, you can contact me via</p>
-                            <span class="contact-phone"></span>
-                            <span class="contact-email"></span>
+                            <span class="contact-phone">
+                                <i class="fa-solid fa-phone"></i>
+                                07467527354
+                            </span> <br>
+                            <span class="contact-email">
+                                <i class="fa-solid fa-envelope"></i>
+                                thisisreal.email@gmail.com
+                            </span>
                             <h3>Alternatively you can simply fill in this form...</h3>
                         </div>
                     </div>
                     <div class="contact-col">
                         <form method="POST" accept="utf-8" class="contact-form" ud="contact-form">
                             <div class="name">
-                                <label for="first-name">First Name</label>
-                                <input type="text" class="form-control" id="first-name" name="first name">
-                                <label for="last-name">First Name</label>
-                                <input type="text" class="form-control" id="last-name" name="last name">
+                                <div class="col-1">
+                                    <label for="first-name">First Name</label>
+                                    <input type="text" class="form-control" id="first-name" name="first name">
+                                </div>
+                                <div class="col-1">
+                                    <label for="last-name">First Name</label>
+                                    <input type="text" class="form-control" id="last-name" name="last name">
+                                </div>
                             </div>
-                            <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" name="email">
-                            <label for="subject">Subject</label>
-                            <input type="text" class="form-control" id="subject" name="emailsubject">
-                            <label for="message">Message</label>
-                            <input type="text" class="form-control" id="message" name="emailmessage">
+                            <div class="col-2">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="col-2">
+                                <label for="subject">Subject</label>
+                                <input type="text" class="form-control" id="subject" name="emailsubject">
+                            </div>
+                            <div class="col-2">
+                                <label for="message">Message</label>
+                                <textarea type="text" class="form-control" id="message" name="emailmessage"></textarea>
+                            </div>
+                            <div class="submit-btn-container">
+                                <button name="submit" class="btn">Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>
