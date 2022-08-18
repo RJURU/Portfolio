@@ -395,13 +395,10 @@ textarea#message {
   #contact {
     flex-direction: column;
   }
-  .contact-col {
+  .contact-col, .col-1 {
     width: 100%;
   }
   .name {
     flex-direction: column;
-  }
-  .col-1 {
-    width: 100%;
   }
 }/*# sourceMappingURL=main.css.map */
