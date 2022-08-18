@@ -1,10 +1,14 @@
 html {
   font-size: 16px;
   color: white;
+  background-color: #202020;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 ul {
@@ -20,6 +24,11 @@ h1 {
 h2 {
   margin: 0;
   padding: 0;
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 p {
@@ -31,6 +40,7 @@ p {
 a {
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
 
 button {
@@ -43,7 +53,7 @@ button {
   justify-content: center;
   width: 100%;
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 80px);
 }
 
 .banner-img-container {
@@ -98,12 +108,15 @@ button {
 
 .scroll-down {
   position: absolute;
-  width: 100vw;
+  width: 100%;
   bottom: 10px;
   font-size: 3rem;
-  background: none;
-  border: none;
   color: white;
+  text-align: center;
+}
+
+.logo {
+  cursor: pointer;
 }
 
 .main-nav {
@@ -120,12 +133,185 @@ button {
 .nav {
   display: flex;
   flex-direction: row;
+  margin: 0;
 }
 .nav li {
-  background-color: #4a4a4a;
   font-size: 2rem;
   margin-left: 5px;
   padding: 5px 15px;
   cursor: pointer;
-  border-radius: 10px;
+  line-height: 68px;
+}
+.nav li:hover {
+  background-color: #4a4a4a;
+  border-bottom: 2px solid #ce2b2d;
+  box-shadow: inset 0 -20px 20px -10px rgba(255, 255, 255, 0.4), inset 0 -11px 10px -10px #ce2b2d;
+  transition: all 0.5s ease;
+}
+.nav i {
+  display: none;
+  line-height: 64px;
+}
+
+#about {
+  min-height: 10vh;
+  height: auto;
+  background: #4a4a4a;
+  text-align: center;
+  border-radius: 25px 25px 0 0;
+  margin-bottom: -6px;
+}
+#about .about-title h2 {
+  border-bottom: 5px solid #ce2b2d;
+}
+
+#projects {
+  min-height: 10vh;
+  height: auto;
+  background: #4a4a4a;
+  text-align: center;
+  border-radius: 0 0 25px 25px;
+}
+#projects .projects-title h2 {
+  border-top: 5px solid #ce2b2d;
+}
+
+#contact {
+  height: 10vh;
+  background: #4a4a4a;
+  border-radius: 25px 25px 0 0;
+  bottom: 0;
+}
+
+#about-show {
+  display: none;
+  flex-direction: row;
+  padding: 5px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-bottom: 6px;
+  border: 5px solid #ce2b2d;
+  border-top: 0;
+  border-bottom: 0;
+}
+#about-show .about-container {
+  max-width: 31%;
+}
+#about-show h3 {
+  padding: 0 5px;
+  margin: 0;
+}
+#about-show p {
+  font-size: 1rem;
+  padding: 0 5px;
+}
+#about-show:target {
+  display: flex;
+}
+
+#project-show {
+  display: none;
+  height: auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  border: 5px solid #ce2b2d;
+  border-top: 0;
+  border-bottom: 0;
+}
+#project-show:target {
+  display: flex;
+}
+
+.project {
+  width: 250px;
+  margin: 5px;
+}
+.project:hover .show-desc {
+  display: block;
+}
+
+.thumbnail {
+  width: 250px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px 25px 0 0;
+  margin-bottom: -6px;
+}
+
+.content {
+  background: #202020;
+  border-radius: 0 0 25px 25px;
+  height: 150px;
+  border-top: 3px solid #ce2b2d;
+}
+.content .project-name {
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.content .short-desc {
+  font-size: 0.9rem;
+}
+.content .language-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.content .language {
+  display: flex;
+  justify-content: center;
+  padding: 4px;
+  margin-left: 3px;
+  border-radius: 20px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+.content .html {
+  background: #39b869;
+}
+.content .css {
+  background: #26dbcb;
+}
+.content .java {
+  background: #804ebd;
+}
+.content .php {
+  background: #e38c3f;
+}
+
+.show-desc {
+  display: none;
+  position: absolute;
+  width: 250px;
+  height: 295px;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 25px;
+  z-index: 1;
+  padding: 5px;
+}
+.show-desc p {
+  font-size: 1.5rem;
+}
+.show-desc a {
+  font-size: 1.3rem;
+}
+.show-desc a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .nav li {
+    margin-left: 25px;
+  }
+  .nav li a:first-of-type {
+    display: none;
+  }
+  .nav i {
+    display: block;
+  }
 }/*# sourceMappingURL=main.css.map */

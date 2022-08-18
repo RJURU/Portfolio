@@ -6,17 +6,37 @@
         <title>Robertas Portfolio</title>
         <link rel="stylesheet" href="main.css">
         <script src="https://kit.fontawesome.com/52d68163f3.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
             <div id="nav">
-                <div class="main-nav">
-                    <h2 class="logo">RV</h2>
-                    <ul class="nav">
-                        <li><a href="#about">About Me</a></li>
-                        <li><a href="#projects">Projects</a></li>
-                        <li><a href="contact">Contact Me</a></li>
-                    </ul>
+                <div class="container">
+                    <div class="main-nav">
+                        <h2 class="logo">RV</h2>
+                        <ul class="nav">
+                            <li>
+                                <a href="#about">About</a>
+                                <a href="#about">
+                                    <i class="fa-solid fa-address-card icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#projects">Projects</a>
+                                <a href="#projects">
+                                    <i class="fa-solid fa-diagram-project icon"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#contact">Contact</a>
+                                <a href="#contact">
+                                    <i class="fa-solid fa-address-book icon"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div id="banner">
@@ -27,14 +47,166 @@
                     <div class="banner-content">
                         <div class="container">
                             <h1 class="intro-name">Hi, I'm Robertas</h1>
-                            <p class="bio">I'm a develeoper.</p>
+                            <p class="bio">I'm a developer.</p>
                         </div>
                     </div>
-                    <button class="scroll-down" href="#">
+                    <a class="scroll-down" href="#about">
                         <i class="fa-solid fa-angle-down"></i>
-                    </button>
+                    </a>
                 </div>
             </div>
         </header>
+        <div class="main-content">
+            <div class="container section">
+                <div id="about">
+                    <a href="#about-show" class="about-title">
+                        <h2>About Me</h2>
+                    </a>
+                    <div id="about-show">
+                        <div class="about-container">
+                            <h3>Introduction</h3>
+                            <p>I'm Robertas, I'm a junior developer. I've been interested in programming for a long time, having knowledge in using JavaScript, CSS, HTML, and C++.</p>
+                        </div>
+                        <div class="about-container">
+                            <h3>Interests</h3>
+                            <p>I've been playing a veriety games since I was young from FPS games to Puzzle games. I've played both multipleyer and single player games, with a preference for single player.</p>
+                        </div>
+                        <div class="about-container">
+                            <h3>Experience</h3>
+                            <p>Completed computer science at A level, played around with programming on my own time, creating small projects such as a converter using Java and later remaking it using CSS for better UI.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="projects">
+                    <div id="project-show">
+                        <div class="project">
+                            <div class="show-desc">
+                                <p class="long-desc"> This is a longer descpription of the project, detailing what the project is, who is was made for, and a few extra details.</p>
+                                <span><a>See Project</a></span>
+                            </div>
+                            <img src="Images/beautiful-wallpaper.png" alt="Project Thumbnail" class="thumbnail">
+                            <div class="content">
+                                <h3 class="project-name">Project 1</h3>
+                                <p class="short-desc">This is a short description of what the website is, and what it was made for.</p>
+                                <div class="language-container">
+                                    <span class="language html">
+                                        HTML
+                                    </span>
+                                    <span class="language css">
+                                        CSS
+                                    </span>
+                                    <span class="language java">
+                                        Java
+                                    </span> 
+                                    <span class="language php">
+                                        PHP
+                                    </span>                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="show-desc">
+                                <p class="long-desc"> This is a longer descpription of the project, detailing what the project is, who is was made for, and a few extra details.</p>
+                                <span><a>See Project</a></span>
+                            </div>
+                            <img src="Images/beautiful-wallpaper.png" alt="Project Thumbnail" class="thumbnail">
+                            <div class="content">
+                                <h3 class="project-name">Project 2</h3>
+                                <p class="short-desc">This is a short description of what the website is, and what it was made for.</p>
+                                <div class="language-container">
+                                    <span class="language html">
+                                        HTML
+                                    </span>
+                                    <span class="language css">
+                                        CSS
+                                    </span>
+                                    <span class="language php">
+                                        PHP
+                                    </span>                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="show-desc">
+                                <p class="long-desc"> This is a longer descpription of the project, detailing what the project is, who is was made for, and a few extra details.</p>
+                                <span><a>See Project</a></span>
+                            </div>
+                            <img src="Images/beautiful-wallpaper.png" alt="Project Thumbnail" class="thumbnail">
+                            <div class="content">
+                                <h3 class="project-name">Project 3</h3>
+                                <p class="short-desc">This is a short description of what the website is, and what it was made for.</p>
+                                <div class="language-container">
+                                    <span class="language java">
+                                        Java
+                                    </span> 
+                                    <span class="language php">
+                                        PHP
+                                    </span>                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="show-desc">
+                                <p class="long-desc"> This is a longer descpription of the project, detailing what the project is, who is was made for, and a few extra details.</p>
+                                <span><a>See Project</a></span>
+                            </div>
+                            <img src="Images/beautiful-wallpaper.png" alt="Project Thumbnail" class="thumbnail">
+                            <div class="content">
+                                <h3 class="project-name">Project 4</h3>
+                                <p class="short-desc">This is a short description of what the website is, and what it was made for.</p>
+                                <div class="language-container">
+                                    <span class="language html">
+                                        HTML
+                                    </span>
+                                    <span class="language java">
+                                        Java
+                                    </span>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="show-desc">
+                                <p class="long-desc"> This is a longer descpription of the project, detailing what the project is, who is was made for, and a few extra details.</p>
+                                <span><a>See Project</a></span>
+                            </div>
+                            <img src="Images/beautiful-wallpaper.png" alt="Project Thumbnail" class="thumbnail">
+                            <div class="content">
+                                <h3 class="project-name">Project 5</h3>
+                                <p class="short-desc">This is a short description of what the website is, and what it was made for.</p>
+                                <div class="language-container">
+                                    <span class="language css">
+                                        CSS
+                                    </span>                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <div class="show-desc">
+                                <p class="long-desc"> This is a longer descpription of the project, detailing what the project is, who is was made for, and a few extra details.</p>
+                                <span><a>See Project</a></span>
+                            </div>
+                            <img src="Images/beautiful-wallpaper.png" alt="Project Thumbnail" class="thumbnail">
+                            <div class="content">
+                                <h3 class="project-name">Project 6</h3>
+                                <p class="short-desc">This is a short description of what the website is, and what it was made for.</p>
+                                <div class="language-container">
+                                    <span class="language html">
+                                        HTML
+                                    </span>                                
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#project-show" class="projects-title">
+                        <h2>Projects</h2>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div id="contact"></div>
+            </div>
+        </footer>
     </body>
 </html>
