@@ -1,3 +1,43 @@
+@-webkit-keyframes exampleBtn {
+  0% {
+    box-shadow: 0 0 10px #ce2b2d;
+  }
+  20% {
+    box-shadow: 0 0 15px #ce2b2d;
+  }
+  40% {
+    box-shadow: 0 0 25px #ce2b2d;
+  }
+  60% {
+    box-shadow: 0 0 30px #ce2b2d;
+  }
+  80% {
+    box-shadow: 0 0 25px #ce2b2d;
+  }
+  100% {
+    box-shadow: 0 0 15px #ce2b2d;
+  }
+}
+@keyframes exampleBtn {
+  0% {
+    box-shadow: 0 0 10px #ce2b2d;
+  }
+  20% {
+    box-shadow: 0 0 15px #ce2b2d;
+  }
+  40% {
+    box-shadow: 0 0 25px #ce2b2d;
+  }
+  60% {
+    box-shadow: 0 0 30px #ce2b2d;
+  }
+  80% {
+    box-shadow: 0 0 25px #ce2b2d;
+  }
+  100% {
+    box-shadow: 0 0 15px #ce2b2d;
+  }
+}
 html {
   font-size: 16px;
   color: white;
@@ -313,8 +353,47 @@ button {
   border-radius: 25px;
   text-align: center;
   margin-top: 30px;
+  /*>.container {
+      text-align: -webkit-center;
+  }*/
 }
 
+/*.example-btn-container {
+    border: 5px solid white;
+    width: 100px;
+    height: 30px;
+    transition: all 1s ease;
+    .example-btn {
+        display: block;
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+        background:cyan;
+    }
+    &:hover {
+        border: 5px solid $highlight;
+        box-shadow: 0 0 10px $highlight;
+        transition: all 1s ease;
+        animation-name: exampleBtn;
+        animation-play-state: running;
+        animation-iteration-count: infinite;
+        animation-direction: normal;
+        animation-duration: 1s;
+    }
+}
+
+code {
+    text-align: left;
+}
+
+
+.code {
+    font-family: 'Courier New', Courier, monospace;
+    height: 500px;
+    width: 50%;
+    background: $primary;
+    text-align: left;
+}*/
 #scion-scheme {
   background: #4a4a4a;
   border-radius: 25px;
